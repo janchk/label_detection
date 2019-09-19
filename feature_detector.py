@@ -10,10 +10,12 @@ from imutils.video import FPS
 def descr_computing(img):
 
     # detector = cv2.xfeatures2d.HarrisLaplaceFeatureDetector_create()
-    detector = cv2.xfeatures2d.MSDDetector_create()
-    # star = cv2.xfeatures2d.StarDetector_create()
-    freak = cv2.xfeatures2d.FREAK_create()
+    # detector = cv2.xfeatures2d.MSDDetector_create()
+    # detector = cv2.xfeatures2d.StarDetector_create(responseThreshold=80, lineThresholdProjected=100, lineThresholdBinarized=100, suppressNonmaxSize=3 )
+    detector = cv2.xfeatures2d.StarDetector_create()
+    freak = cv2.xfeatures2d.FREAK_create(scaleNormalized=True, nOctaves=100 )
 
+    cv2.cornerSubPix(img, kpd)
     kpd = detector.detect(img, None)
 
     kp, descr = freak.compute(img, kpd)
