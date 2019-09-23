@@ -1,4 +1,7 @@
 venv/
 *.AVI
+*.avi
+*.zip
 *.mp4
+*.idea
 

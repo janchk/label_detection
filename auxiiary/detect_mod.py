@@ -70,6 +70,7 @@ def detect_markers(img):
         cv2.cornerSubPix(gray, edges, (5, 5), (1, 1), criteria )
     except:
         pass
+
     contours, hierarchy = cv2.findContours(edges.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)[-2:]
 
     # We only keep the long enough contours

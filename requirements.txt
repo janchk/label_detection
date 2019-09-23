@@ -1,3 +1,4 @@
+apriltag==0.0.16
 ar-markers==0.5.0
 bleach==3.1.0
 build-utils==0.3.2
@@ -13,6 +14,7 @@ opencv-contrib-python==4.1.1.26
 opencv-python==4.1.1.26
 pkginfo==1.5.0.1
 Pygments==2.4.2
+pyrealsense2==2.28.1.1111
 readme-renderer==24.0
 requests==2.22.0
 requests-toolbelt==0.9.1
