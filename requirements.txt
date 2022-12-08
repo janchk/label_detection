@@ -2,7 +2,7 @@ apriltag==0.0.16
 ar-markers==0.5.0
 bleach==3.1.0
 build-utils==0.3.2
-certifi==2019.9.11
+certifi==2022.12.7
 chardet==3.0.4
 colorama==0.4.1
 docutils==0.15.2
